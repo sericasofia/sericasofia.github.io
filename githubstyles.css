@@ -1,0 +1,207 @@
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+    background: rgb(255, 200, 255);
+    background: linear-gradient(90deg, rgba(255, 200, 255, 1) 0%, rgba(255, 220, 255, 1) 25%, rgba(255, 232, 255, 1) 50%, rgba(255, 220, 255, 1) 75%, rgba(255, 200, 255, 1) 100%);
+    color: #af32a5;
+    width: 100%;
+}
+
+main {
+    width: 90%;
+    margin: auto;
+    line-height: 30px;
+}
+
+.sourcecode {
+    font-style: italic;
+    text-decoration: underline;
+    color: rgb(143, 214, 255);
+    font-size: 20px;
+}
+
+.bottommargin {
+    margin-bottom: 20px;
+}
+
+.topmargin {
+    margin-top: 30px;
+}
+
+.description_box {
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+/* Container just for centering elements --------------------------------------------- */
+
+.centeringcontainer {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.navbar {
+    background: rgb(255, 200, 255);
+    background: linear-gradient(90deg, rgba(255, 200, 255, 1) 10%, rgba(255, 200, 255, 1) 90%);
+    box-shadow: 0 2px 2px -2px rgba(255, 200, 255, 1);
+    margin-bottom: 40px;
+}
+
+.navtext {
+    color: #af32a5;
+}
+
+.navtext:hover {
+    color: #ff00ea;
+}
+
+.dropdown-menu {
+    background-color: #e667e6;
+}
+
+.dropdown-item:hover {
+    background-color: #e667e6;
+    color: magenta;
+    color: white;
+}
+
+a {
+    color: #af32a5;
+}
+
+a:hover {
+    color: magenta;
+}
+
+h1 {
+    color: rgb(255, 82, 255);
+    text-align: center;
+    font-family: 'Petit Formal Script', cursive;
+    font-size: 300%;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: rgb(255, 82, 255);
+    font-family: 'Petit Formal Script', cursive;
+    font-size: 200%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+h3 {
+    color: rgb(255, 82, 255);
+    font-family: 'Petit Formal Script', cursive;
+    font-size: 150%;
+    margin-top: 30px;
+}
+
+h4 {
+    margin: 10px 0px 10px 0px;
+}
+
+#profilepic {
+    width: 100%;
+    max-width: 150px;
+    float: right;
+    margin: 5px 0px 10px 30px;
+}
+
+img {
+    border-radius: 12px;
+}
+
+p {
+    margin-bottom: 10px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* Inputs */
+
+input {
+    border-radius: 8px;
+    background-color: rgb(255, 184, 240);
+}
+
+input:focus {
+    outline: none;
+}
+
+select {
+    border-radius: 8px;
+    background-color: rgb(255, 184, 240);
+    padding: 7px;
+}
+
+select:focus {
+    outline: none;
+}
+
+textarea {
+    border-radius: 8px;
+    background-color: rgb(255, 184, 240);
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.footer {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    text-align: center;
+    clear: both;
+    position: relative;
+}
+
+#asteroidgameimg, #pygameclockimg, #savethelostonesimg {
+    max-width: 100%;
+}
+
+/* Flexbox for imgs in Python projects */
+
+.flexboxforimages {
+    margin: 50px 0px 30px 0px;
+}
+
+/* Lists */
+
+ul {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/*  Modules in list */
+
+.modules {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.btn {
+    color: rgb(255, 255, 255);
+    background-color: rgb(223, 120, 243);
+    border-radius: 8px;
+    width: 100px;
+}
+
+#hidden_div {
+    display: none;
+}
+
+/* Message mixer */
+
+.mixertextarea {
+    width: 300px;
+}
+
+.mixerbtncontainer {
+    margin-bottom: 20px;
+    width: 300px;
+    margin: auto;
+}

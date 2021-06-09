@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../../githubstyles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <title>Message Mixer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="cipher.js" defer></script>
+</head>
+
+<body>
+    <nav>
+
+        <ul class="nav justify-content-center navbar">
+
+
+            <li class="nav-item">
+                <a class="nav-link navtext" href="https://sericasofia.github.io/">Home</a>
+            </li>
+
+            <!--Vanilla JS projects-->
+            <li class="nav-item">
+                <div class="dropdown show">
+                    <a class="dropdown-toggle nav-link navtext" href="#" role="button" id="dropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Vanilla JS projects
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="../creditcardchecker/creditcardchecker.html">Credit card
+                            checker</a>
+                        <a class="dropdown-item" href="./messagemixer.html">Message
+                            mixer</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link navtext" href="../../pythonprojects.html">Python Projects</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link navtext" href="https://github.com/sericasofia" target="_blank">GitHub</a>
+            </li>
+
+
+
+
+            <li class="nav-item">
+                <a class="nav-link navtext" href="#" target="_blank">LinkedIn</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <main>
+
+        <div id="header">
+            <h1>Message Mixer</h1>
+            <div class="text-center bottommargin"><a href="" class="sourcecode" target="_blank">Source code link</a>
+            </div>
+        </div>
+
+
+        <div>
+
+            <!-- Descriptions -->
+
+            <div class='description_box'>
+                <h4>Symbol Cipher</h4>
+                <p>Convert each alphabet to different symbols.</p>
+
+                <h4>Reverse cipher</h4>
+                <p>Flips the entered text backwards.</p>
+
+                <h4>Caesar cipher</h4>
+                <p>Arranges each alphabet forward by the given number.</p>
+
+                <h4>Encipher</h4>
+                <p>Arranges each alphabet forward by a given number, then convert each alphabet to a different symbol,
+                    and last flips the text around.</p>
+
+                <h4>Decipher</h4>
+                <p>Flips the text around then convert each alphabet to a different symbol and last arranges each
+                    alphabet backward by the given number.</p>
+
+            </div>
+
+
+
+            <!--Inputs-->
+
+            <div class="topmargin centeringcontainer">
+
+
+
+
+                <textarea id="cipherInputText" class="mixertextarea" rows="4" cols="45"
+                    placeholder="Write you crypto text here:"></textarea>
+
+                <div class="mixerbtncontainer">
+
+
+
+
+
+                    <!--Choosing cryptor type-->
+                    <select name="ciphers" id="ciphers" onchange="showAmountInput('hidden_div', this)">
+                        <option value="" disabled selected value>select a method</option>
+                        <option value="symbol">symbol cipher</option>
+                        <option value="reverse">reverse cipher</option>
+                        <option value="caesar">caesar cipher</option>
+                        <option value="encrypt">encipher</option>
+                        <option value="decrypt">decipher</option>
+                    </select>
+
+                    <!--Btn-->
+                    <button id="cryptButton" class="btn" type="button">Run</button>
+
+                </div>
+
+
+                <div id="hidden_div">
+                    <p id="hidden_div_text" class="text-center"></p>
+                    <input type="Number" id="amount" value=0>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <div id="displayCipherText" class="text-center"></div>
+    </main>
+
+
+    <footer class="footer">
+        <script src="../../copyrightNotice.js"></script>
+    </footer>
+
+    <!--For Bootstrap functionality-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
